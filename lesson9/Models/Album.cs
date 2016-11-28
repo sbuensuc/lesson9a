@@ -9,6 +9,11 @@ namespace lesson9.Models
     [Table("Album")]
     public partial class Album
     {
+        public Album(string title)
+        {
+            this.Title = title;
+        }
+
         public int AlbumId { get; set; }
 
         public int GenreId { get; set; }
